@@ -1,0 +1,13 @@
+## A PARTIR DE UNA IMAGEN
+FROM node:14
+
+## AÑADIR PACKAGE
+ADD package.json package-lock.json
+## INSTALAR DEPENDENCIAS
+RUN npm install
+# COPIAR EL CÓDIGO
+ADD .
+## EXPOSE (DÓNDE CORRA MI APP)
+EXPOSE 5000
+## CORRER EL CONTENEDOR 
+CMD ['node', 'app.js']
