@@ -9,5 +9,5 @@ router.get('/', (req, res) => {
 app.use(router);
 
 app.listen(5000, ()=>{
-    console.log('Servidor corriendo en el puerto 5000');
+    console.log('Servidor corriendo en el puertoo 5000');
 });
